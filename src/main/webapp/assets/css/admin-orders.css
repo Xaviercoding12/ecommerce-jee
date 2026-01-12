@@ -1,0 +1,169 @@
+/* =====================================
+   RESET & BASE
+===================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    color: #1f2937;
+    min-height: 100vh;
+}
+
+/* =====================================
+   CONTAINER
+===================================== */
+.container {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+/* =====================================
+   PAGE TITLE
+===================================== */
+.container h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #111827;
+}
+
+/* =====================================
+   TABLE
+===================================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 12px 30px rgba(0,0,0,.08);
+}
+
+/* =====================================
+   TABLE HEADER
+===================================== */
+table th {
+    background: #f9fafb;
+    color: #374151;
+    padding: 14px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: .6px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+/* =====================================
+   TABLE BODY
+===================================== */
+table td {
+    padding: 14px;
+    font-size: 14px;
+    color: #1f2937;
+    text-align: center;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Hover */
+table tr {
+    transition: background .2s ease;
+}
+
+table tr:hover {
+    background: #f9fafb;
+}
+
+/* =====================================
+   STATUS BADGES
+===================================== */
+.status {
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .4px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+/* PENDING */
+.status-pending {
+    background: #fff7ed;
+    color: #c2410c;
+    border: 1px solid #fed7aa;
+}
+
+/* PAID */
+.status-paid {
+    background: #ecfdf5;
+    color: #15803d;
+    border: 1px solid #bbf7d0;
+}
+
+/* CANCELLED */
+.status-cancelled {
+    background: #fef2f2;
+    color: #b91c1c;
+    border: 1px solid #fecaca;
+}
+
+/* =====================================
+   BUTTONS
+===================================== */
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+/* PRIMARY – ORANGE E-COMMERCE */
+.btn-primary {
+    background: #ff6a00;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background: #e85f00;
+}
+
+/* =====================================
+   EMPTY STATE
+===================================== */
+table td[colspan] {
+    padding: 30px;
+    text-align: center;
+    color: #6b7280;
+    font-style: italic;
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+@media (max-width: 768px) {
+
+    .container h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    table th,
+    table td {
+        padding: 12px;
+        font-size: 12px;
+    }
+}

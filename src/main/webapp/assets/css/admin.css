@@ -1,0 +1,154 @@
+/* =====================================
+   RESET & BASE
+===================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    color: #1f2937;
+    min-height: 100vh;
+}
+
+/* =====================================
+   ADMIN NAVBAR
+===================================== */
+.admin-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 32px;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.admin-navbar .brand {
+    font-size: 20px;
+    font-weight: 800;
+    color: #ff6a00;
+}
+
+.admin-navbar a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 999px;
+    background: #fee2e2;
+    color: #b91c1c;
+    transition: all .2s ease;
+}
+
+.admin-navbar a:hover {
+    background: #fecaca;
+}
+
+/* =====================================
+   PAGE
+===================================== */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 24px;
+}
+
+.page-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 35px;
+    color: #111827;
+}
+
+/* =====================================
+   GRID ADMIN
+===================================== */
+.admin-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+/* =====================================
+   ADMIN CARD
+===================================== */
+.admin-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 26px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 12px 30px rgba(0,0,0,.08);
+    transition: transform .25s ease, box-shadow .25s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 45px rgba(0,0,0,.12);
+}
+
+/* =====================================
+   CARD CONTENT
+===================================== */
+.admin-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #111827;
+}
+
+.admin-card p {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 22px;
+    line-height: 1.4;
+}
+
+/* =====================================
+   BUTTONS
+===================================== */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 18px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+/* PRIMARY – ORANGE E-COMMERCE */
+.btn-primary {
+    background: #ff6a00;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background: #e85f00;
+}
+
+/* SECONDARY (DISABLED) */
+.btn-secondary {
+    background: #f3f4f6;
+    color: #9ca3af;
+    cursor: not-allowed;
+}
+
+/* =====================================
+   DISABLED CARD
+===================================== */
+.admin-card.disabled {
+    opacity: .6;
+}
+
+.admin-card.disabled:hover {
+    transform: none;
+    box-shadow: none;
+}

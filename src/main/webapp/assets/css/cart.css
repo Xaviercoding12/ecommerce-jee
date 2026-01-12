@@ -1,0 +1,211 @@
+/* =====================================
+   RESET & BASE
+===================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    color: #1f2937;
+}
+
+/* =====================================
+   CONTAINER
+===================================== */
+.container {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+/* =====================================
+   TITRE
+===================================== */
+.container h2 {
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111827;
+}
+
+/* =====================================
+   PANIER VIDE
+===================================== */
+.container p {
+    text-align: center;
+    font-size: 15px;
+    margin: 30px 0;
+    color: #6b7280;
+}
+
+/* =====================================
+   TABLE PANIER
+===================================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    background: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 12px 30px rgba(0,0,0,.08);
+}
+
+/* =====================================
+   TABLE HEADER
+===================================== */
+table th {
+    background: #f9fafb;
+    color: #374151;
+    padding: 14px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: .6px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+/* =====================================
+   TABLE ROWS
+===================================== */
+table td {
+    padding: 14px;
+    text-align: center;
+    font-size: 14px;
+    color: #1f2937;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
+
+table tr:hover {
+    background: #f9fafb;
+}
+
+/* Produit */
+table td:first-child {
+    font-weight: 600;
+    color: #111827;
+}
+
+/* =====================================
+   FORM INLINE (QTÉ)
+===================================== */
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+/* =====================================
+   INPUT QUANTITÉ
+===================================== */
+input[type="number"] {
+    width: 70px;
+    background: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    padding: 8px 10px;
+    color: #111827;
+    font-size: 14px;
+    text-align: center;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: #ff6a00;
+    box-shadow: 0 0 0 3px rgba(255,106,0,.15);
+}
+
+/* =====================================
+   BOUTONS
+===================================== */
+.btn {
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+    border: none;
+    transition: all .2s ease;
+}
+
+/* UPDATE */
+.btn-primary {
+    background: #ff6a00;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background: #e85f00;
+}
+
+/* DELETE */
+.btn-danger {
+    background: #dc2626;
+    color: #ffffff;
+}
+
+.btn-danger:hover {
+    background: #b91c1c;
+}
+
+/* CHECKOUT */
+.btn-success {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 30px;
+    font-size: 15px;
+    border-radius: 999px;
+    background: #16a34a;
+    color: #ffffff;
+}
+
+.btn-success:hover {
+    background: #15803d;
+}
+
+/* =====================================
+   TOTAL
+===================================== */
+h3 {
+    margin-top: 30px;
+    font-size: 22px;
+    text-align: right;
+    color: #111827;
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+@media (max-width: 768px) {
+
+    .container h2 {
+        font-size: 22px;
+    }
+
+    table th,
+    table td {
+        padding: 12px;
+        font-size: 12px;
+    }
+
+    form {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    h3 {
+        text-align: center;
+    }
+}

@@ -1,0 +1,153 @@
+/* =====================================
+   RESET & BASE
+===================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    color: #1f2937;
+    min-height: 100vh;
+}
+
+/* =====================================
+   CONTAINER
+===================================== */
+.container {
+    max-width: 1100px;
+    margin: 70px auto;
+    padding: 0 20px;
+}
+
+/* =====================================
+   TITRE
+===================================== */
+.container h2 {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 35px;
+    color: #111827;
+}
+
+/* =====================================
+   TABLE COMMANDES
+===================================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 12px 30px rgba(0,0,0,.08);
+}
+
+/* =====================================
+   HEADER TABLE
+===================================== */
+table th {
+    background: #f9fafb;
+    color: #374151;
+    padding: 14px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: .8px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+/* =====================================
+   ROWS
+===================================== */
+table td {
+    padding: 14px;
+    text-align: center;
+    font-size: 14px;
+    color: #1f2937;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
+
+table tr {
+    transition: background .2s ease;
+}
+
+table tr:hover {
+    background: #f9fafb;
+}
+
+/* =====================================
+   FIRST COLUMN (ID)
+===================================== */
+table td:first-child {
+    font-weight: 600;
+    color: #111827;
+}
+
+/* =====================================
+   STATUS BADGES
+===================================== */
+.status {
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: .6px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+/* PENDING */
+.status-pending {
+    background: #fff7ed;
+    color: #c2410c;
+    border: 1px solid #fed7aa;
+}
+
+/* PAID */
+.status-paid {
+    background: #ecfdf5;
+    color: #047857;
+    border: 1px solid #a7f3d0;
+}
+
+/* CANCELLED */
+.status-cancelled {
+    background: #fef2f2;
+    color: #b91c1c;
+    border: 1px solid #fecaca;
+}
+
+/* =====================================
+   EMPTY STATE
+===================================== */
+table td[colspan] {
+    padding: 35px;
+    text-align: center;
+    font-style: italic;
+    color: #6b7280;
+    font-size: 15px;
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+@media (max-width: 768px) {
+
+    .container h2 {
+        font-size: 22px;
+    }
+
+    table th,
+    table td {
+        padding: 12px;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence
+                                 https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
+             version="3.0">
+
+    <persistence-unit name="EcommercePU" transaction-type="JTA">
+
+        <!-- Fournisseur JPA -->
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <!-- JTA DataSource WildFly -->
+        <jta-data-source>java:/PostgresDS</jta-data-source>
+
+        <properties>
+
+            <!-- Dialecte PostgreSQL -->
+            <property name="hibernate.dialect"
+                      value="org.hibernate.dialect.PostgreSQLDialect"/>
+
+            <!-- Gestion du schéma -->
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+
+            <!-- Logs SQL -->
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+
+            <!-- Contexte JTA -->
+            <property name="hibernate.transaction.jta.platform"
+                      value="org.hibernate.engine.transaction.jta.platform.internal.JBossAppServerJtaPlatform"/>
+
+        </properties>
+
+    </persistence-unit>
+</persistence>

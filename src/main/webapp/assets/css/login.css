@@ -1,0 +1,105 @@
+/* =====================================
+   RESET & BASE
+===================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    color: #1f2937;
+}
+
+/* =====================================
+   AUTH CONTAINER
+===================================== */
+.auth-container {
+    max-width: 400px;
+    margin: 90px auto;
+    background: #ffffff;
+    padding: 36px 32px;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 12px 30px rgba(0,0,0,.08);
+}
+
+/* =====================================
+   TITRE
+===================================== */
+.auth-container h2 {
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 28px;
+    color: #111827;
+}
+
+/* =====================================
+   FORM
+===================================== */
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* =====================================
+   INPUTS
+===================================== */
+.auth-container input {
+    padding: 13px 14px;
+    border-radius: 10px;
+    border: 1px solid #d1d5db;
+    font-size: 14px;
+    transition: border .2s ease, box-shadow .2s ease;
+}
+
+.auth-container input::placeholder {
+    color: #9ca3af;
+}
+
+.auth-container input:focus {
+    outline: none;
+    border-color: #ff6a00;
+    box-shadow: 0 0 0 3px rgba(255,106,0,.18);
+}
+
+/* =====================================
+   BOUTON
+===================================== */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 18px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: all .2s ease;
+}
+
+/* ORANGE BOULANGER */
+.btn-primary {
+    background: #ff6a00;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background: #e85f00;
+}
+
+/* =====================================
+   MESSAGE ERREUR
+===================================== */
+.error-message {
+    margin-top: 16px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    color: #dc2626;
+}
